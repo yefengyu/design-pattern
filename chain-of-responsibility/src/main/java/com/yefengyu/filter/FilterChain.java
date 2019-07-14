@@ -28,7 +28,7 @@ public class FilterChain
         return this;
     }
 
-    //处理事件（employee）从FilterChain中获取过滤器，进行处理，处理完成之后过滤器会再调用该方法，
+    //处理事件（alarm）从FilterChain中获取过滤器，进行处理，处理完成之后过滤器会再调用该方法，
     //继续执行下一个filter.这就需要在每个Filter接口的实现类中最后一句需要回调FilterChain的doFilter方法。
     public void doFilter(Alarm alarm, FilterChain chain)
     {
